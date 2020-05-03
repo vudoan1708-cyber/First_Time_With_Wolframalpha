@@ -80,9 +80,16 @@ def speakAnswer():
 cv_w = 400
 cv_h = 300
 
+# create the root
 root = tk.Tk()
 canvas = tk.Canvas(root, width=cv_w, height=cv_h, bg='black')
 canvas.pack()
+
+# change the name of the window
+root.title('AI Assistant')
+
+# change windows icon
+root.iconbitmap('media/icon/robot.ico')
 
 # create an entry box
 entry = tk.Entry(root)
